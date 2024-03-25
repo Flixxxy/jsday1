@@ -13,30 +13,34 @@
 </head>
 
 <body>
+	<H2>Q1</H2>
 	<script>
-		// 1
-		// var name = prompt("Enter your name")
-		// document.write(name)
-
-		//2
-		// var years = confirm("Confirm if they are over 18 years old!");
-		// if (years === true) {
-		//   document.write("You are over 18 years old!");
-		// } else {
-		//   document.write("You are under 18 years old!");
-		// }
-
-		/* 	//3
-			let shop = prompt("Value")
-			if (shop <= 5) {
-				document.write(shop * 100 + "som")
-			}
-			else {
-				var sure = confirm("Are you sure?")
-				document.write(shop * 100 + "som")
-				alert("Congratulations")
-			} */
-		/* //4
+		var name = prompt("Enter your name")
+		document.write(name)
+	</script>
+	<H2>Q2</H2>
+	<script>
+		var years = confirm("Confirm if they are over 18 years old!")
+		if (years === true) {
+			document.write("You are over 18 years old!")
+		} else {
+			document.write("You are under 18 years old!")
+		}
+	</script>
+	<H2>Q3</H2>
+	<script>
+		let shop = prompt("Value")
+		if (shop <= 5) {
+			document.write(shop * 100 + "som")
+		}
+		else {
+			var sure = confirm("Are you sure?")
+			document.write(shop * 100 + "som")
+			alert("Congratulations")
+		}
+	</script>
+	<H2>Q4</H2>
+	<script>
 		var question1 = prompt("What is the capital of France? a) Paris b) Rome c) Madrid")
 		var all = 0
 		if (question1 == 'a') {
@@ -62,14 +66,59 @@
 		else {
 			alert("Wrong")
 		}
-		alert("Your score: " + all) */
-
-		//5
+		alert("Your score: " + all)
+	</script>
+	<H2>Q5</H2>
+	<script>
 		let name
 		let age
 		name = prompt("Enter your name")
-		age = prompt("Enter your age");
-		
+		age = prompt("Enter your age")
+		let hobbies = ["Acting: Acting in TV shows, movies, commercials or theater productions " + "<br>", "Art collecting: Finding and collecting pieces of art for display or sale" + "<br>", "Being a DJ: Providing music entertainment at different gatherings or parties" + "<br>"]
+		document.write(name + "<br>")
+		document.write(age + "<br>")
+		document.write(hobbies)
+	</script>
+	<H2>Q6</H2>
+	<script>
+		var food = []
+		for (var i = 0; i < 5; i++) {
+			food[i] = prompt("Enter your favorite food") + "<br>"
+			document.write("Food[" + i + "] = " + food[i])
+		}
+	</script>
+	<H2>Q7</H2>
+	<script>
+		var food = []
+		for (var i = 0; i < 5; i++) {
+			food[i] = prompt("Enter your favorite food") + "<br>"
+			document.write("Food[" + i + "] = " + food[i])
+		}
+	</script>
+	<H2>Q8</H2>
+	<script>
+		let array = ["start", "half", "lock", "vulcan", "life"]
+		document.write("Array orig: " + array + "<br>")
+		let spl = prompt("Your word")
+		array.splice(array.length - 1, 1, spl)
+		document.write(" Array: " + array.join(", "));
+	</script>
+	<H2>Q9</H2>
+	<script>
+		let num = prompt("Your number")
+		for (let i = 1; i < 10; i++) {
+			document.write(num + " * " + i + " = " + num * i + "<br>")
+		}
+	</script>
+	<H2>Q11</H2>
+	<script>
+		let name = confirm("is your age over 18?")
+		if (name == 1) {
+			alert("You are eligible to vote.")
+		}
+		else {
+			alert("You are not eligible to vote.")
+		}
 	</script>
 </body>
 
